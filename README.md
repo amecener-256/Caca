@@ -1,2 +1,2 @@
 # Caca
-Graphe représentant la circulation mondiale de caca !!!
+Graphe représentant la circulation de caca !!!
