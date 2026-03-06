@@ -195,23 +195,6 @@ Nodes are colored according to **pollution intensity**.
 
 ---
 
-# Installation
-
-Clone the repository:
-
-```bash
-git clone https://github.com/yourusername/caca-graph.git
-cd caca-graph
-```
-
-Install dependencies:
-
-```bash
-pip install networkx matplotlib
-```
-
----
-
 # Running the Project
 
 Execute the main script:
