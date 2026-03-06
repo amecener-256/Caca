@@ -7,12 +7,6 @@ CACACACACACACACACACACACACACA
 Expliquer en quoi le graphe est nécéssaire et quel est son but ?
 
 
-Je te propose un texte propre que tu peux mettre dans ton **README.md** :
-
-1. une **présentation du projet**,
-2. une **justification des fonctions** que tu as créées.
-
-Je me base directement sur ton code.
 
 ---
 
