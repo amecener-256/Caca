@@ -17,7 +17,7 @@ Tu peux **copier-coller directement** dans `README.md`.
 
 ---
 
-# 🌍 Project Overview
+# Project Overview
 
 This project models the **global circulation of human excrement and its ecological consequences** using **graph theory**.
 
@@ -36,7 +36,7 @@ The objective is to **study the propagation of pollution through interconnected 
 
 ---
 
-# 🔬 Scientific Motivation
+# Scientific Motivation
 
 Human waste can contribute to several environmental processes:
 
@@ -56,7 +56,7 @@ Graph theory provides a powerful framework to:
 
 ---
 
-# 🧠 Graph Model
+# Graph Model
 
 The system is modeled as a **directed weighted graph**.
 
@@ -80,7 +80,7 @@ Each edge has a **weight (`flux`)** representing the intensity of pollutant tran
 
 ---
 
-# 📊 Ecological Circulation Cycle
+# Ecological Circulation Cycle
 
 The model highlights a major ecological feedback loop:
 
@@ -106,7 +106,7 @@ This illustrates how pollutants may **indirectly return to human populations** t
 
 ---
 
-# 🧩 Graph Diagram
+# Graph Diagram
 
 Simplified structure of the ecological network:
 
@@ -148,7 +148,7 @@ Weak     Medium     High
 
 ---
 
-# ⚙️ Algorithms Used
+# Algorithms Used
 
 The project applies several **network science algorithms**.
 
@@ -164,7 +164,7 @@ The project applies several **network science algorithms**.
 
 ---
 
-# 🧪 Example Analyses
+# Example Analyses
 
 The model can answer questions such as:
 
@@ -175,7 +175,7 @@ The model can answer questions such as:
 
 ---
 
-# 🎥 Pollution Propagation Animation
+# Pollution Propagation Animation
 
 The project includes a **dynamic simulation of pollution propagation**.
 
@@ -195,7 +195,7 @@ animer_propagation(G)
 
 ---
 
-# 🖼 Graph Visualization
+# Graph Visualization
 
 The network can also be visualized:
 
@@ -207,7 +207,7 @@ Nodes are colored according to **pollution intensity**.
 
 ---
 
-# 💻 Installation
+# Installation
 
 Clone the repository:
 
@@ -224,7 +224,7 @@ pip install networkx matplotlib
 
 ---
 
-# ▶️ Running the Project
+# Running the Project
 
 Execute the main script:
 
@@ -243,7 +243,7 @@ This will run:
 
 ---
 
-# 🧪 Example Output
+# Example Output
 
 Example console output:
 
@@ -256,7 +256,7 @@ Excrements       : 0.211
 
 ---
 
-# 📁 Project Structure
+# Project Structure
 
 ```
 project/
@@ -269,7 +269,7 @@ project/
 
 ---
 
-# 🔭 Future Improvements
+# Future Improvements
 
 Possible extensions:
 
@@ -281,7 +281,7 @@ Possible extensions:
 
 ---
 
-# 📚 References
+# References
 
 Concepts used in this project:
 
@@ -292,13 +292,7 @@ Concepts used in this project:
 
 ---
 
-# 📜 License
-
-MIT License
-
----
-
-# 👨‍🔬 Author
+# Author
 
 Project exploring **ecological network modeling using Python and graph theory**.
 
