@@ -1,6 +1,3 @@
-Voici une **version README très stylée pour GitHub**, structurée comme un **projet scientifique / recherche**.
-Tu peux **copier-coller directement** dans `README.md`.
-
 ---
 
 # 💩 Global Human Excrement Circulation Graph
