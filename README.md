@@ -11,7 +11,6 @@ Tu peux **copier-coller directement** dans `README.md`.
 ![NetworkX](https://img.shields.io/badge/NetworkX-Graph%20analysis-green)
 ![Matplotlib](https://img.shields.io/badge/Matplotlib-Visualization-orange)
 ![Status](https://img.shields.io/badge/status-Experimental-purple)
-![License](https://img.shields.io/badge/license-MIT-lightgrey)
 
 </p>
 
