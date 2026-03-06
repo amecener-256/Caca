@@ -227,19 +227,6 @@ Excrements       : 0.211
 
 ---
 
-# Project Structure
-
-```
-project/
-│
-├── cacapy.py
-├── README.md
-├── docs/
-│   └── pollution_propagation.gif
-```
-
----
-
 # Future Improvements
 
 Possible extensions:
