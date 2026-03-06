@@ -178,14 +178,6 @@ The model can answer questions such as:
 
 The project includes a **dynamic simulation of pollution propagation**.
 
-Example animation:
-
-```
-docs/pollution_propagation.gif
-```
-
-*(Place your generated GIF here)*
-
 You can generate the animation using:
 
 ```
