@@ -222,3 +222,13 @@ Cela permet d’identifier **les trajectoires les plus probables de circulation 
 
 
 En résumé, ce projet montre comment la **théorie des graphes peut être utilisée pour modéliser un système écologique complexe**, en représentant la circulation des polluants dans les interactions entre humains, environnement et agriculture.
+
+
+
+
+
+
+
+
+
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/21a7e2ac-2b4c-44a2-8e3e-d8f877a119c2" />
