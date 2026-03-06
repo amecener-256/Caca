@@ -304,4 +304,3 @@ Project exploring **ecological network modeling using Python and graph theory**.
 
 
 <img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/21a7e2ac-2b4c-44a2-8e3e-d8f877a119c2" />
-<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/21a7e2ac-2b4c-44a2-8e3e-d8f877a119c2" />
