@@ -1,309 +1,305 @@
-# Caca
-Graphe représentant la circulation de caca !!!
-
-
-
-Expliquer en quoi le graphe est nécéssaire et quel est son but ?
-
-
+Voici une **version README très stylée pour GitHub**, structurée comme un **projet scientifique / recherche**.
+Tu peux **copier-coller directement** dans `README.md`.
 
 ---
 
-# Modélisation de la circulation mondiale des excréments humains
+# 💩 Global Human Excrement Circulation Graph
 
-## Présentation du projet
+<p align="center">
 
-Ce projet propose une **modélisation simplifiée de la circulation mondiale des excréments humains** à travers différents systèmes environnementaux et socio-écologiques.
+![Python](https://img.shields.io/badge/Python-3.10+-blue)
+![NetworkX](https://img.shields.io/badge/NetworkX-Graph%20analysis-green)
+![Matplotlib](https://img.shields.io/badge/Matplotlib-Visualization-orange)
+![Status](https://img.shields.io/badge/status-Experimental-purple)
+![License](https://img.shields.io/badge/license-MIT-lightgrey)
 
-L'objectif est de représenter comment les déchets humains peuvent circuler entre plusieurs milieux :
-
-* les **populations humaines**
-* les **systèmes d’assainissement**
-* les **milieux aquatiques** (rivières, fleuves, océans)
-* les **systèmes agricoles**
-* la **boucle alimentaire**
-
-Pour cela, le projet utilise un **graphe orienté** construit avec la bibliothèque **NetworkX**. Dans ce graphe :
-
-* les **nœuds** représentent des éléments du système écologique (humains, excréments, rivières, océans, sols agricoles, etc.)
-* les **arêtes** représentent les **flux de matière ou de pollution** entre ces éléments.
-
-Chaque arête possède un **poids appelé flux**, qui représente l'intensité de la circulation de pollution entre deux éléments.
-
-Ce modèle permet d’explorer plusieurs questions :
-
-* Quels sont les **points critiques** dans la diffusion de pollution ?
-* Comment la pollution **se propage** dans le réseau écologique ?
-* Quels sont les **chemins principaux** reliant la production de déchets humains à la contamination alimentaire ?
-* Que se passe-t-il si un **élément du système disparaît** (ex : une rivière ou un système d'assainissement) ?
-
-Le projet combine donc :
-
-* **théorie des graphes**
-* **modélisation environnementale**
-* **analyse de réseaux complexes**
-* **visualisation scientifique**
+</p>
 
 ---
 
-# Justification des fonctions
+# 🌍 Project Overview
 
-## `creer_graphe()`
+This project models the **global circulation of human excrement and its ecological consequences** using **graph theory**.
 
-Cette fonction construit le **graphe principal du modèle écologique**.
+Human waste does not disappear after disposal. It moves through several interconnected environmental systems:
 
-Elle définit :
+* human populations
+* sanitation infrastructures
+* rivers and major waterways
+* oceans
+* agricultural systems
+* food consumption cycles
 
-* les **nœuds du système** (humains, excréments, stations d’assainissement, rivières, océans, agriculture)
-* les **flux entre ces éléments**
+This project represents these interactions using a **directed ecological network**.
 
-Le graphe est orienté afin de représenter **le sens réel de circulation de la pollution**.
-
-Cette fonction constitue **la base du modèle**, car toutes les analyses reposent sur cette structure.
-
----
-
-## `points_critiques(G)`
-
-Cette fonction calcule la **centralité d’intermédiarité** des nœuds.
-
-Cela permet d’identifier les **points de passage essentiels** dans le réseau :
-les éléments qui contrôlent une grande partie des flux.
-
-Dans un système écologique réel, ces points critiques peuvent correspondre par exemple à :
-
-* des fleuves majeurs
-* des infrastructures d’assainissement
-* des zones de redistribution de pollution
+The objective is to **study the propagation of pollution through interconnected environmental systems**.
 
 ---
 
-## `analyse_impact(G)`
+# 🔬 Scientific Motivation
 
-Cette fonction simule la **propagation de la pollution** à partir des populations humaines.
+Human waste can contribute to several environmental processes:
 
-Elle initialise une pollution de départ puis la **propage dans le graphe en fonction des flux**.
+* **water pollution**
+* **nutrient cycling**
+* **agricultural contamination**
+* **global pollutant redistribution**
 
-L'objectif est d'obtenir une **estimation du niveau de pollution reçu par chaque élément du système**.
+Understanding these dynamics requires modeling **complex networks of interactions**.
 
-Cette analyse permet de comprendre :
+Graph theory provides a powerful framework to:
 
-* où la pollution **s'accumule**
-* quels milieux sont **les plus exposés**
-
----
-
-## `parcours_en_largeur(G)`
-
-Cette fonction applique un **parcours en largeur (BFS)**.
-
-Elle permet d’explorer le réseau **niveau par niveau** à partir d'une source humaine.
-
-Dans le contexte du modèle, cela permet d'observer **comment la pollution peut se diffuser progressivement dans le système écologique**.
+* represent environmental interactions
+* identify critical nodes
+* analyze diffusion pathways
+* simulate ecological disruptions.
 
 ---
 
-## `parcours_en_profondeur(G)`
+# 🧠 Graph Model
 
-Cette fonction applique un **parcours en profondeur (DFS)**.
+The system is modeled as a **directed weighted graph**.
 
-Contrairement au parcours en largeur, il explore **une chaîne complète de propagation** avant de revenir en arrière.
+### Nodes represent:
 
-Cela permet d’identifier des **trajectoires complètes de circulation de la pollution** dans le système.
+* Human populations
+* Excrement production
+* Sanitation systems
+* Rivers
+* Major rivers
+* Oceans
+* Irrigation systems
+* Agricultural soils
+* Food products
 
----
+### Edges represent:
 
-## `pagerank_ecologique(G)`
+**pollution fluxes** between system components.
 
-Cette fonction applique l’algorithme **PageRank** au réseau écologique.
-
-Elle permet de mesurer **l’importance globale des nœuds dans la diffusion de la pollution**.
-
-Un nœud aura un score élevé s'il :
-
-* reçoit beaucoup de flux
-* est connecté à d'autres nœuds influents.
-
----
-
-## `centralite_propre(G)`
-
-Cette fonction calcule la **centralité propre (eigenvector centrality)**.
-
-Elle mesure l’influence d’un nœud **en fonction de l’importance de ses voisins**.
-
-Dans un système environnemental, cela permet d’identifier les **zones structurantes du réseau écologique**.
+Each edge has a **weight (`flux`)** representing the intensity of pollutant transfer.
 
 ---
 
-## `scenario_rupture(G, noeud)`
+# 📊 Ecological Circulation Cycle
 
-Cette fonction simule la **disparition d’un élément du système**.
+The model highlights a major ecological feedback loop:
 
-Elle supprime un nœud (par exemple une rivière) puis recalcul les équilibres du réseau.
+```
+Humans
+  ↓
+Excrement
+  ↓
+Sanitation systems
+  ↓
+Rivers
+  ↓
+Oceans
+  ↓
+Agricultural irrigation
+  ↓
+Crops (tomatoes)
+  ↓
+Humans
+```
 
-Cela permet d'étudier :
-
-* la **résilience du système**
-* les **changements dans la diffusion de la pollution**
-
----
-
-## `composantes_fortement_connexes(G)`
-
-Cette fonction détecte les **composantes fortement connexes du graphe**.
-
-Une composante fortement connexe est un groupe de nœuds où **chaque nœud peut atteindre les autres**.
-
-Dans ce modèle, cela peut révéler **des cycles écologiques** ou des **boucles de pollution**.
-
----
-
-## `visualiser_graphe(G)`
-
-Cette fonction permet de **visualiser le réseau écologique**.
-
-Elle utilise **Matplotlib** et **NetworkX** pour afficher :
-
-* les nœuds
-* les flux
-* le niveau de pollution
-
-La couleur des nœuds représente **l’intensité de la pollution estimée**.
+This illustrates how pollutants may **indirectly return to human populations** through the food system.
 
 ---
 
-## `positions_monde(G)`
+# 🧩 Graph Diagram
 
-Cette fonction définit une **disposition spatiale logique des nœuds**.
+Simplified structure of the ecological network:
 
-Les nœuds sont organisés selon la logique du système :
-
-1. humains
-2. excréments
-3. assainissement
-4. rivières et fleuves
-5. océans
-6. agriculture
-7. retour alimentaire
-
-Cette organisation facilite la **lecture du graphe**.
-
----
-
-## `animer_propagation(G)`
-
-Cette fonction crée une **animation de la propagation de la pollution dans le temps**.
-
-Elle montre visuellement :
-
-* comment la pollution se diffuse
-* comment certains milieux deviennent progressivement plus contaminés.
-
-Cette visualisation rend le modèle **plus intuitif et pédagogique**.
-
----
-
-## `plus_court_chemin_ecologique(G, source, cible)`
-
-Cette fonction utilise **l’algorithme de Dijkstra** pour calculer le chemin écologique le plus court.
-
-Le flux est transformé en **coût écologique (1 / flux)** afin de modéliser la facilité de propagation.
-
-Cela permet d’identifier **les trajectoires les plus probables de circulation de pollution** entre deux éléments du système.
-
-
-
-En résumé, ce projet montre comment la **théorie des graphes peut être utilisée pour modéliser un système écologique complexe**, en représentant la circulation des polluants dans les interactions entre humains, environnement et agriculture.
-
-
-
-
-
+```
+        Humans
+          │
+          ▼
+      Excrement
+          │
+          ▼
+    Sanitation Systems
+   ┌────────┼────────┐
+   ▼        ▼        ▼
+Weak     Medium     High
+   │        │        │
+   ▼        ▼        ▼
+     Local Rivers
+          │
+          ▼
+     Major Rivers
+      ┌────┴────┐
+      ▼         ▼
+ Atlantic     Pacific
+   Ocean        Ocean
+      │           │
+      └────┬──────┘
+           ▼
+   Agricultural Irrigation
+           │
+           ▼
+     Agricultural Soil
+           │
+           ▼
+        Tomatoes
+           │
+           ▼
+         Humans
+```
 
 ---
 
-# Pourquoi utiliser un graphe ?
+# ⚙️ Algorithms Used
 
-Le système étudié dans ce projet est **complexe et interconnecté**. Les excréments humains ne restent pas dans un seul endroit : ils circulent entre plusieurs milieux :
+The project applies several **network science algorithms**.
 
-* les **populations humaines**
-* les **systèmes d’assainissement**
-* les **rivières et fleuves**
-* les **océans**
-* les **systèmes agricoles**
-* la **boucle alimentaire**
-
-Ces éléments forment un **réseau d’interactions** où la pollution peut suivre différents chemins.
-
-Pour représenter correctement ces relations, l'utilisation d’un **graphe orienté** est particulièrement adaptée.
-
-Dans ce modèle :
-
-* les **nœuds** représentent les éléments du système (humains, excréments, rivières, sols agricoles, etc.)
-* les **arêtes** représentent les **flux de circulation de la pollution**
-* le **poids des arêtes** représente l’intensité du flux.
-
-Ainsi, le graphe permet de **modéliser les relations et les trajectoires possibles de la pollution dans l’environnement**.
+| Algorithm                     | Purpose                              |
+| ----------------------------- | ------------------------------------ |
+| Betweenness Centrality        | Detect critical ecological nodes     |
+| PageRank                      | Measure global node influence        |
+| Eigenvector Centrality        | Identify influential ecological hubs |
+| BFS                           | Explore pollution propagation        |
+| DFS                           | Explore deep circulation paths       |
+| Dijkstra                      | Compute shortest ecological paths    |
+| Strongly Connected Components | Detect ecological cycles             |
 
 ---
 
-# But du graphe
+# 🧪 Example Analyses
 
-Le graphe sert principalement à **analyser la circulation et l’impact écologique des excréments humains à l’échelle globale**.
+The model can answer questions such as:
 
-Grâce à cette représentation, il devient possible de :
-
-### Comprendre la propagation de la pollution
-
-Le graphe permet de suivre **comment la pollution se déplace dans les différents milieux** :
-des populations humaines vers les systèmes d’assainissement, puis vers les rivières, les océans et finalement l’agriculture.
+* Which nodes are **critical pollution hubs**?
+* How does pollution **propagate through ecosystems**?
+* What happens if a **river system collapses**?
+* Which paths connect **human waste to food contamination**?
 
 ---
 
-### Identifier les points critiques du système
+# 🎥 Pollution Propagation Animation
 
-Certaines parties du réseau peuvent jouer un rôle central dans la circulation de la pollution.
+The project includes a **dynamic simulation of pollution propagation**.
 
-Par exemple :
+Example animation:
 
-* les **rivières locales**
-* les **fleuves majeurs**
-* les **systèmes d’assainissement**
+```
+docs/pollution_propagation.gif
+```
 
-Les algorithmes de **centralité** permettent d’identifier ces points sensibles.
+*(Place your generated GIF here)*
 
----
+You can generate the animation using:
 
-### Étudier les cycles écologiques
-
-Le graphe met en évidence des **boucles de circulation**, notamment la boucle alimentaire :
-
-humains → excréments → eau → agriculture → nourriture → humains.
-
-Cela montre comment certains polluants peuvent **revenir indirectement vers les populations humaines**.
+```
+animer_propagation(G)
+```
 
 ---
 
-### Simuler des scénarios
+# 🖼 Graph Visualization
 
-Grâce au graphe, il est possible de tester différents scénarios :
+The network can also be visualized:
 
-* suppression d’un nœud (ex : disparition d’une rivière)
-* modification des flux de pollution
-* évolution de l’assainissement
+```python
+visualiser_graphe(G)
+```
 
-Ces simulations permettent d’observer **l’impact sur l’ensemble du système**.
-
----
-
-**En résumé :**
-
-Le graphe est nécessaire car il permet de **représenter un système environnemental complexe sous forme de réseau**, ce qui rend possible l’analyse de la propagation de la pollution, l’identification des points critiques et la simulation de différents scénarios écologiques.
+Nodes are colored according to **pollution intensity**.
 
 ---
 
+# 💻 Installation
 
+Clone the repository:
 
+```bash
+git clone https://github.com/yourusername/caca-graph.git
+cd caca-graph
+```
 
-<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/21a7e2ac-2b4c-44a2-8e3e-d8f877a119c2" />
+Install dependencies:
+
+```bash
+pip install networkx matplotlib
+```
+
+---
+
+# ▶️ Running the Project
+
+Execute the main script:
+
+```bash
+python cacapy.py
+```
+
+This will run:
+
+* graph construction
+* pollution propagation analysis
+* centrality analysis
+* shortest ecological path
+* strongly connected components detection
+* pollution propagation animation
+
+---
+
+# 🧪 Example Output
+
+Example console output:
+
+```
+___ Points critiques ___
+Rivieres_locales : 0.452
+Fleuves_majeurs  : 0.318
+Excrements       : 0.211
+```
+
+---
+
+# 📁 Project Structure
+
+```
+project/
+│
+├── cacapy.py
+├── README.md
+├── docs/
+│   └── pollution_propagation.gif
+```
+
+---
+
+# 🔭 Future Improvements
+
+Possible extensions:
+
+* integrate **real-world pollution datasets**
+* add **geographical mapping**
+* simulate **policy scenarios**
+* integrate **wastewater treatment efficiency models**
+* build **interactive dashboards**
+
+---
+
+# 📚 References
+
+Concepts used in this project:
+
+* Graph Theory
+* Network Science
+* Environmental Systems Modeling
+* Pollution Diffusion Models
+
+---
+
+# 📜 License
+
+MIT License
+
+---
+
+# 👨‍🔬 Author
+
+Project exploring **ecological network modeling using Python and graph theory**.
+
+---
